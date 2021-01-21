@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 
-       Copyright 2009-2019 the original author or authors.
+       Copyright 2009-2021 the original author or authors.
 
        Licensed under the Apache License, Version 2.0 (the "License");
        you may not use this file except in compliance with the License.
@@ -144,9 +144,9 @@
     <jacoco.version>0.8.4</jacoco.version>
 
     <!--下面几个是自己加的-->
-    <slf4j.version>1.7.21</slf4j.version>
-    <logback.version>1.1.7</logback.version>
     <lombok.version>1.16.10</lombok.version>
+    <fastjson.version>1.2.62</fastjson.version>
+    <jdbc.version>5.1.48</jdbc.version>
   </properties>
 
   <dependencies>
@@ -284,18 +284,6 @@
 
     <!---后面的依赖是自己加的-->
     <dependency>
-      <groupId>org.slf4j</groupId>
-      <artifactId>slf4j-api</artifactId>
-      <version>${slf4j.version}</version>
-    </dependency>
-
-    <dependency>
-      <groupId>ch.qos.logback</groupId>
-      <artifactId>logback-classic</artifactId>
-      <version>${logback.version}</version>
-    </dependency>
-
-    <dependency>
       <groupId>org.projectlombok</groupId>
       <artifactId>lombok</artifactId>
       <version>${lombok.version}</version>
@@ -304,13 +292,13 @@
     <dependency>
       <groupId>com.alibaba</groupId>
       <artifactId>fastjson</artifactId>
-      <version>1.2.62</version>
+      <version>${fastjson.version}</version>
     </dependency>
 
     <dependency>
       <groupId>mysql</groupId>
       <artifactId>mysql-connector-java</artifactId>
-      <version>5.1.48</version>
+      <version>${jdbc.version}</version>
     </dependency>
   </dependencies>
 
